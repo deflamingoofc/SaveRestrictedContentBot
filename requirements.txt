@@ -6,3 +6,6 @@ cryptg
 tgcrypto
 pyrogram
 python-decouple
+flask
+aiohttp
+aiofiles
