@@ -1,8 +1,18 @@
 import glob
+from aiohttp import web
+from plugins import web_server
 from pathlib import Path
 from main.utils import load_plugins
 import logging
 from . import bot
+
+self.username = usr_bot_me.username
+        #web-response
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, PORT).start()
+
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
